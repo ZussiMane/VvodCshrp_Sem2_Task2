@@ -9,7 +9,7 @@
 Console.WriteLine("Введите трёхзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number >= 100 && number <= 999)
+if (number >= 100 && number <= 999) // проверка числа на трёхзначность
 {
     int secondDigit = number / 10 % 10; // получаем вторую цифру трёхзначного числа
     int thirdDigit = number % 10; // получаем третью цифру трёхзначного числа
