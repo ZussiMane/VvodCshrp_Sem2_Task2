@@ -6,7 +6,9 @@
 // 254 => 5^4 = 625
 // 617 => 1
 
-Console.WriteLine("Введите трёхзначное число: ");
+using System.Xml.XPath;
+
+Console.WriteLine("Введите  целое трёхзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 if (number >= 100 && number <= 999) // проверка числа на трёхзначность
@@ -22,4 +24,8 @@ if (number >= 100 && number <= 999) // проверка числа на трёх
         count++; // увеличиваем значение счетчика, исходя из задданого условия "if"
     }
     Console.WriteLine(result);
+}
+else
+{
+    Console.WriteLine("Ошибка ввода!");
 }
